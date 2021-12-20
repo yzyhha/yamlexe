@@ -1,0 +1,13 @@
+server:
+  port: 8081
+person:
+  name: yzy@ee.com
+  age: ${random.int}
+  happy: true
+  birth: 2020/4/22
+  maps: {k1: v1,k2: v2}
+  lists:
+    -code
+    -music
+
+
