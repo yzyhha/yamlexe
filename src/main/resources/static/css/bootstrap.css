@@ -3856,10 +3856,10 @@ tbody.collapse.show {
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
+  color: #6f42c1;
 }
-
 .nav-link.disabled {
-  color: #6c757d;
+  color: #1c80db;
 }
 
 .nav-tabs {
@@ -3902,6 +3902,7 @@ tbody.collapse.show {
 .nav-pills .nav-link {
   border-radius: 0.25rem;
 }
+
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {

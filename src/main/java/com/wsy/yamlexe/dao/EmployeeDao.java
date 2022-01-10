@@ -13,15 +13,16 @@ import java.util.Map;
 public class EmployeeDao {
     private static Map<Integer, Employee> employees;
     @Autowired
-    private DepartmentDao departmentDao;
+    DepartmentDao departmentDao;
 
     static {
         employees = new HashMap<>();
-        employees.put(1001, new Employee(1001,"张三","2502209041@qq.com",0,new Department(101,"教学部")));
-        employees.put(1002, new Employee(1002,"李四","2502209042@qq.com",1,new Department(101,"人事部")));
-        employees.put(1003, new Employee(1003,"王五","2502209043@qq.com",0,new Department(101,"小卖部")));
-        employees.put(1004, new Employee(1004,"赵六","2502209044@qq.com",1,new Department(101,"后勤部")));
-        employees.put(1005, new Employee(1005,"牛七","2502209045@qq.com",0,new Department(101,"运营部")));
+        employees.put(1001, new Employee(1001,"张三","2502209041@qq.com",0,new Department(101,"niu")));
+        employees.put(1002, new Employee(1002,"李四","2502209042@qq.com",1,new Department(102,"人事部")));
+        employees.put(1003, new Employee(1003,"王五","2502209043@qq.com",0,new Department(103,"小卖部")));
+        employees.put(1004, new Employee(1004,"赵六","2502209044@qq.com",1,new Department(104,"后勤部")));
+        employees.put(1005, new Employee(1005,"牛七","2502209045@qq.com",0,new Department(105,"运营部")));
+        employees.put(1006, new Employee(1006,"牛七","2502209045@qq.com",0,new Department(101,"运营部")));
     }
 
     private static Integer initId=1006;
