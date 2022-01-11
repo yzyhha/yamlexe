@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.thymeleaf.util.StringUtils;
 
 import javax.servlet.http.HttpSession;
+import javax.websocket.Session;
 
 @Controller
 public class LoginController {
@@ -25,5 +26,11 @@ public class LoginController {
             model.addAttribute("msg","用户名或者密码错误");
             return "index";
         }
+    }
+    @RequestMapping("/user/logout")
+    public String logout(HttpSession session){
+    session.invalidate();
+        return "redirect:/index.html";
+
     }
 }

@@ -6,4 +6,4 @@ spring:
 server:
   servlet:
     context-path: /yzy
-  port: 8082
+  port: 8080

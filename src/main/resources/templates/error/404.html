@@ -18,52 +18,17 @@
 </head>
 
 <body>
-
 <div th:replace="~{commons/commons::topside}"></div>
 
 <div th:replace="~{commons/commons::sidebar(active='list.html')}"></div>
-
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-    <h2><a class="btn btn-sm btn-success" th:href="@{/add}">添加员工</a></h2>
-    <div class="table-responsive">
-        <table class="table table-striped table-sm">
-            <thead>
-            <tr>
-                <th>id</th>
-                <th>lastName</th>
-                <th>email</th>
-                <th>gender</th>
-                <th>department</th>
-                <th>birth</th>
-                <th>操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="emp:${emps}">
-                <td th:text="${emp.getId()}"></td>
-                <td th:text="${emp.getLastName()}"></td>
-                <td th:text="${emp.getEmail()}"></td>
-                <td th:text="${emp.getGender()==0?'女':'男'}"></td>
-                <td th:text="${emp.getDepartment().getName()}"></td>
-                <td th:text="${#dates.format(emp.getBirth(),'yyyy-MM-dd')}"></td>
-                <td>
-                    <a class="btn btn-sm btn-primary" th:href="@{'/emp/'+${emp.getId()}}">编辑</a>
-                    <a class="btn btn-sm btn-danger" th:href="@{'/delemp/'+${emp.getId()}}">删除</a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+<h1>404</h1>
 </main>
-</div>
-</div>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../static/js/jquery-slim.min.js"><\/script>')</script>
 <script src="../static/js/popper.min.js"></script>
 <script src="../static/js/bootstrap.min.js"></script>
